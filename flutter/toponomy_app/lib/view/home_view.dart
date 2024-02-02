@@ -20,6 +20,7 @@ class _HomeViewState extends State<HomeView> {
   void initState() {
     super.initState();
     _fetchPlaces();
+    _getUserData();
   }
 
   Future<void> _getUserData() async {

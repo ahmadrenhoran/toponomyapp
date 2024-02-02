@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ToponomyApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd65bb9294aa0724978db3042163488da3a5a7e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4376d7534b11e7b5f8063f36ad8aab31068d3c25")]
 [assembly: System.Reflection.AssemblyProductAttribute("ToponomyApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ToponomyApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
