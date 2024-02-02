@@ -1,8 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:label="toponomy_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        
+        <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyDmTiAu-PWhyFZnk2W53ApBI3Jt7XKNSX4"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

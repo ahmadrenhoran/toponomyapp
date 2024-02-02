@@ -15,6 +15,8 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("register")]
+
+    [ProducesResponseType(200)]
     public async Task<IActionResult> Register([FromBody] User user)
     {
         var existingUser = await _userRepository.GetUserByEmailAsync(user.Email);
@@ -30,6 +32,7 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("login")]
+    [ProducesResponseType(200)]
     public async Task<IActionResult> Login([FromBody] User user)
     {
         var existingUser = await _userRepository.GetUserByEmailAsync(user.Email);

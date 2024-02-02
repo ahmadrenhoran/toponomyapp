@@ -9,4 +9,7 @@ public class Place
     public string PlaceType { get; set; }
     public DateTime Date { get; set; }
     public bool IsDeleted { get; set; }
+    public double Latitude { get; set; }
+    public double Longitude { get; set; }
 }
+

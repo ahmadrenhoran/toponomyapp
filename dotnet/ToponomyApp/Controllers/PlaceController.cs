@@ -19,7 +19,7 @@ public class PlaceController : ControllerBase
         return Ok(places);
     }
 
-    [HttpGet("{id}/show")]
+    [HttpGet("show/{id}")]
     public IActionResult GetPlaceById(int id)
     {
         var place = _placeRepository.GetPlaceById(id);
@@ -36,7 +36,7 @@ public class PlaceController : ControllerBase
         return Ok(createdPlace);
     }
 
-    [HttpPut("{id}/update")]
+    [HttpPut("update/{id}")]
     public IActionResult UpdatePlace(int id, [FromBody] Place updatedPlace)
     {
         var place = _placeRepository.UpdatePlace(id, updatedPlace);
@@ -46,7 +46,7 @@ public class PlaceController : ControllerBase
         return Ok(place);
     }
 
-    [HttpDelete("{id}/delete")]
+    [HttpDelete("delete/{id}")]
     public IActionResult SoftDeletePlace(int id)
     {
         var place = _placeRepository.SoftDeletePlace(id);

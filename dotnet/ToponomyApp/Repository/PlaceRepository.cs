@@ -36,6 +36,8 @@ public class PlaceRepository : IPlaceRepository
         place.PlaceName = updatedPlace.PlaceName;
         place.Address = updatedPlace.Address;
         place.PlaceType = updatedPlace.PlaceType;
+        place.Latitude = updatedPlace.Latitude;
+        place.Longitude = updatedPlace.Longitude;
         place.Date = updatedPlace.Date;
 
         _context.SaveChanges();
